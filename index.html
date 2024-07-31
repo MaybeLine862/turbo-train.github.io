@@ -26,13 +26,16 @@
         }
         .links {
             margin-top: 20px;
+            list-style: none; /* Убираем маркеры списка */
+            padding: 0; /* Убираем отступы */
+        }
+        .links li {
+            margin: 15px 0; /* Отступ между ссылками */
         }
         .links a {
             color: #ffcc00; /* Подходящий цвет ссылок */
             text-decoration: none;
             font-size: 24px;
-            margin: 15px 20px;
-            display: inline-block;
         }
         .links a:hover {
             text-decoration: underline;
@@ -42,11 +45,11 @@
 <body>
     <h1>Название Сайта</h1>
     <div class="divider"></div>
-    <div class="links">
-        <a href="#">Ссылка 1</a>
-        <a href="#">Ссылка 2</a>
-        <a href="#">Ссылка 3</a>
-        <a href="#">Ссылка 4</a>
-    </div>
+    <ul class="links">
+        <li><a href="#">Ссылка 1</a></li>
+        <li><a href="#">Ссылка 2</a></li>
+        <li><a href="#">Ссылка 3</a></li>
+        <li><a href="#">Ссылка 4</a></li>
+    </ul>
 </body>
 </html>
